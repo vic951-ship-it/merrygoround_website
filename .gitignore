@@ -1,0 +1,11 @@
+merrygoround.db
+merrygoround.db-*
+merrygoround.db.backup
+*.sqlite
+*.sqlite3
+app.py.backup
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
