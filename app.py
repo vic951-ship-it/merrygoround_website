@@ -194,6 +194,9 @@ footer{text-align:center;padding:22px;color:#5b6878;font-size:.85rem}
 </body></html>
 """
 
+# Initialize the database when Flask/Gunicorn loads the app.
+init_db()
+
 @app.route("/")
 def home():
     occupied_page = max(0, request.args.get("occupied_page", 0, type=int))
